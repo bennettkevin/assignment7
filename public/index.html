@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- 
+    Name: Kevin Bennett
+    Date: 10/30/2025
+    CSC 372-01
+
+    This is the page for assignment 7, it is a page to test and utilize endpoints created for the jokebook.
+    It begins with a random joke displayed, and has functionality for users to search jokes by category, and view all categories available. 
+    It also has a form for users to add a new joke to the jokebook.
+    Population of dynamic page content is done through script.js.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Joke Book</title>
+</head>
+<body>
+    <h1>Joke Book</h1>
+    
+    <!-- Populated through script.js-->
+    <section id="jokes">
+    
+    </section>
+    
+    <!-- Populated through script.js-->
+    <section id="categories">
+    
+    </section>
+    
+    <section id="joke-category-selection">
+        <button id="view-categories">Click to see available categories.</button>
+        <form id="search-category">
+            <input type="text" id="category-to-search" name="category" placeholder="Enter a category to search">
+            <button id="search-category-button">Search</button>
+        </form>
+    </section>
+    
+    <section>
+        <form id="add-joke-form">
+            <h2>Add new joke</h2>
+            <select id="form-category" name="category" placeholder="Joke Type" required>
+                <option disabled selected>Select a category</option>
+                <option value="Funny Joke">Funny Joke</option>
+                <option value="Lame Joke">Lame Joke</option>
+            </select>
+            <input type="text" id="setup" name="setup" placeholder="Joke Setup" required>
+            <input type="text" id="delivery" name="delivery" placeholder="Joke Delivery" required>
+            <button type="submit" id="add-joke-button">Add Joke</button>
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.joke-item {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.category-button {
+    margin-left: 5px;
+}
